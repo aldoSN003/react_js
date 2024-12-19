@@ -1,0 +1,60 @@
+[
+    {
+        "name": "",
+        "description": "",
+        "characteristics": {
+            "height": "",
+            "weight": "",
+            "category": "",
+            "abilities": []
+        },
+        "types": {
+            "type_1": "",
+            "type_2": ""
+        },
+        "weaknesses": [],
+        "stats": {
+            "hp": 0,
+            "attack": 0,
+            "special_attack": 0,
+            "special_defense": 0,
+            "speed": 0
+        },
+        "evolutions":{
+           "base":{
+            "name":"",
+            "url":""
+           },
+           "first":{
+             "name":"",
+            "url":""
+           },
+           "second":{
+              "name":"",
+            "url":""
+           }
+
+        }
+    },
+
+
+    {
+        "results": [
+            {
+                "name": "charmander",
+                "url": "https://pokeapi.co/api/v2/pokemon/4/"
+            }
+        ]
+    }
+
+
+
+  {
+    "colors": {
+      "grass": ""
+    }
+  }
+
+
+
+]

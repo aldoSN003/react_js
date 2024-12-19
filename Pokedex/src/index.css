@@ -1,0 +1,139 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+
+   /* --color-card: rgba(213, 231, 181, 0.82);*/
+}
+
+
+
+body{
+    display: flex;
+justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.1rem;
+    width: 50vw;
+    max-width: 400px;
+    min-width: 260px;
+
+    padding: 10px;
+    background: rgba(213, 231, 181, 0.82);
+    border-radius: 25px;
+}
+
+.poke-img{
+    max-width: 20vw;
+    width: 20vw;
+
+    object-fit:contain;
+    object-position: center;
+
+    border-radius: inherit;
+
+    transition: all .5s;
+
+
+}
+
+
+.card h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: #000000;
+}
+
+
+.card h3{
+    font-size: 22px;
+    font-weight: 300;
+    opacity: 0.45;
+    color: #000000;
+
+}
+
+.card p{
+    font-size: 14px;
+    font-weight: 200;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    opacity: 0.5;
+    max-width: 360px;
+
+    color: #000000;
+
+}
+
+.card button{
+
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    border: 1px solid #fdfdfd;
+    border-radius: 40px;
+    background: transparent;
+    color: #000000;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all .5s;
+
+}
+
+.card button:hover{
+    background: #fdfdfd;
+    color: #000000;
+
+}
+
+.card:hover img{
+    transform: scale(1.1);
+}
+
+
+/* MEDIA QUERY */
+@media (max-width: 600px) {
+    .card{
+        text-align: center;
+        flex-direction: column;
+        margin-top: 4vh;
+
+    }
+
+    .poke-img{
+        margin: -60px 0 10px 0;
+        width: 20vw;
+        max-width: 1000px;
+    }
+
+    .card button{
+        width: 100%;
+    }
+}
+
+
+                                                                                                                             css
+                                                                                                                             Copiar código
+@media (max-width: 350px) {
+
+
+    .card img {
+        height: 20vw;
+        object-fit: contain;
+    }
+}
+
