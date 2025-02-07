@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+:root {
+  --primary-color: #0360d9;
+
+
+}
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  
+  color: #213547;
+  background: linear-gradient(to top right, white, #ffffff2c); 
+  
+  background-size: 100% 100%; /* Ensure the gradient does not repeat */
+  background-attachment: fixed; /* Optional: fixes the background while scrolling */
+  
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  height: 100vh; /* Make sure the body takes the full height of the viewport */
+  margin: 0; /* Remove default margin */
+}
+
+
+
+
+.modern-hover {
+  /* ... other styles ... */
+  position: relative; /* Still needed */
+  overflow: hidden; /* Hide the pseudo-element if it extends beyond the container */
+}
+
+.modern-hover::before {
+  /* Or ::after */
+  content: "";
+  position: absolute;
+  left: 50%; /* Start in the middle */
+  bottom: 0;
+  width: 0; /* Initially no width */
+  height: var(
+    --underline-height,
+    0.125rem
+  ); /* Use variable, fallback to 0.125rem */
+  background-color: var(
+    --underline-color,
+    var(--primary-color)
+  ); /* Use variable, fallback to primary color */
+  transition: width 500ms ease, background-color 500ms ease; /* Smooth transition */
+  transform: translateX(-50%); /* Center the underline */
+}
+
+.modern-hover:hover::before {
+  /* Or ::after */
+  width: 100%; /* Full width on hover */
+}
+
+/*
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #213547;
+  background-color: #740202;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+/*
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #ffffff;
+  color: #213547;
+}
+
+*/

@@ -1,0 +1,58 @@
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* Add this to your index.css or appropriate CSS file */
+
+.app-container {
+  padding: 2em;
+}
+
+.input-fields {
+  margin-bottom: 1em;
+}
+
+.input-field {
+  margin: 0.5em 0;
+}
+
+.submit-button {
+  margin-top: 1em;
+}
+
+.submitted-data {
+  margin-top: 2em;
+}
+
+.data-display {
+  margin-top: 1em;
+}
+
+.data-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.data-header {
+  font-weight: bold;
+  margin-right: 1em;
+}
+
+.data-item {
+  margin-right: 1em;
+  padding: 0.5em;
+  background-color: #f1f1f1;
+  border-radius: 0.25em;
+}
