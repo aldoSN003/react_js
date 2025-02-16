@@ -16,28 +16,26 @@ function NavBar() {
           />
         </a>
 
-{/* Desktop Menu */}
-<ul className="hidden lg:flex items-center gap-12 font-medium text-base">
-  <li className="modern-hover hidden md:block">Home</li>
-  <li className="modern-hover hidden md:block">About</li>
-  
-  {/* Inicia Sesión and Regístrate for large devices */}
-  <button
-    type="button"
-    className="hidden lg:block text-gray-900 bg-white border border-[var(--primary-color)] transition-colors duration-500 ease-in-out focus:outline-none font-medium rounded-full text-base px-7 py-2 hover:cursor-pointer hover:text-[var(--primary-color)] hover:scale-105 hover:shadow-md"
-  >
-    Inicia Sesión
-  </button>
+        {/* Desktop Menu */}
+        <ul className="hidden lg:flex items-center gap-12 font-medium text-base">
+          <li className="modern-hover hidden md:block">Home</li>
+          <li className="modern-hover hidden md:block">About</li>
 
-  <button
-    type="button"
-    className="hidden lg:block text-white bg-[var(--primary-color)] transition-colors duration-500 ease-in-out focus:outline-none font-medium rounded-full text-base px-7 py-2 hover:bg-white hover:text-[var(--primary-color)] hover:scale-105 hover:shadow-md hover:cursor-pointer"
-  >
-    Regístrate
-  </button>
-</ul>
+          {/* Inicia Sesión and Regístrate for large devices */}
+          <button
+            type="button"
+            className="hidden lg:block text-gray-900 bg-white border border-[var(--primary-color)] transition-colors duration-500 ease-in-out focus:outline-none font-medium rounded-full text-base px-7 py-2 hover:cursor-pointer hover:text-[var(--primary-color)] hover:scale-105 hover:shadow-md"
+          >
+            Inicia Sesión
+          </button>
 
-
+          <button
+            type="button"
+            className="hidden lg:block text-white bg-[var(--primary-color)] transition-colors duration-500 ease-in-out focus:outline-none font-medium rounded-full text-base px-7 py-2 hover:bg-white hover:text-[var(--primary-color)] hover:scale-105 hover:shadow-md hover:cursor-pointer"
+          >
+            Regístrate
+          </button>
+        </ul>
 
         {/* Mobile Menu Icon - Hidden on XL Screens */}
         <div className="xl:hidden">
